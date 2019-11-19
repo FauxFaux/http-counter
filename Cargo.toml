@@ -8,6 +8,7 @@ edition = "2018"
 failure = "0.1"
 hyper = "0.13.0-alpha.4"
 tokio = "0.2.0-alpha.6"
+jemallocator = "0.3"
 
 [profile.release]
 lto = true

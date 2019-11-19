@@ -8,6 +8,9 @@ use hyper::{
     Body, Method, Request, Response,
 };
 
+#[global_allocator]
+static ALLOC: jemallocator::Jemalloc = jemallocator::Jemalloc;
+
 async fn router(
     req: Request<Body>,
     state: Arc<Mutex<HashMap<String, u64>>>,
